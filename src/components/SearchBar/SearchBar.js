@@ -17,7 +17,7 @@ class SearchBar extends React.Component {
     //The list item elements should use the keys as an attribute, and the values as content.
     return Object.keys(sortByOptions).map(sortByOption => {
       let sortByOptionValue = sortByOptions[sortByOption];
-      return <li key=sortByOptionValue>sortByOption</li>;
+      return <li key={sortByOptionValue}>{sortByOption}</li>;
     });
   }
   render() {
