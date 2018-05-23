@@ -13,11 +13,10 @@ class SearchBar extends React.Component {
   //(Best Match, Highest Rated, Most Reviewed).
   //This is to help future proof against potential changes to the Yelp API.
   renderSortByOptions() {
-    //iterate through the keys and values of the sortByOptions object and return a list item.
-    //The list item elements should use the keys as an attribute, and the values as content.
     return Object.keys(sortByOptions).map(sortByOption => {
-      let sortByOptionValue = sortByOptions[sortByOption];
-      return <li key={sortByOptionValue}>{sortByOption}</li>;
+      //let sortByOptionValue = sortByOptions[sortByOption];
+      //return <li key={sortByOptionValue}>{sortByOption}</li>;
+      return <li key={sortByOptions.sortByOption}>{sortByOption}</li>;
     });
   }
   render() {
