@@ -23,6 +23,16 @@ class SearchBar extends React.Component {
       return <li key={sortByOptions.sortByOption}>{sortByOption}</li>;
     });
   }
+  
+  //returns the current CSS class for a sorting option
+  getSortByClass(sortByOption) {
+    if (this.state.sortBy == sortByOption) {
+      return 'active';
+    } else {
+      return '';
+    }
+  }
+
   render() {
     return (
       <div className="SearchBar">
