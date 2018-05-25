@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
       return <li key={sortByOptions.sortByOption}>{sortByOption}</li>;
     });
   }
-  
+
   //returns the current CSS class for a sorting option
   getSortByClass(sortByOption) {
     if (this.state.sortBy == sortByOption) {
@@ -31,6 +31,10 @@ class SearchBar extends React.Component {
     } else {
       return '';
     }
+  }
+
+  handleSortByChange(sortByOption) {
+    this.setState({sortBy: sortByOption});
   }
 
   render() {
