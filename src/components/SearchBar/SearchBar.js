@@ -12,6 +12,8 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {term:'',location:'',sortBy:'best_match'};
+    this.handleTermChange = this.handleTermChange.bind(this);
+    this.handleLocationChange = this.handleLocationChange.bind(this);
   }
   //dynamically creates the list items needed to display the sort options
   //(Best Match, Highest Rated, Most Reviewed).
@@ -39,6 +41,14 @@ class SearchBar extends React.Component {
 
   handleSortByChange(sortByOption) {
     this.setState({sortBy: sortByOption});
+  }
+
+  handleTermChange(event) {
+    this.setState({term: event.target.value});
+  }
+
+  handleLocationChange(event) {
+    this.setState({location: event.target.value});
   }
 
   render() {
