@@ -18,9 +18,8 @@ class SearchBar extends React.Component {
   //This is to help future proof against potential changes to the Yelp API.
   renderSortByOptions() {
     return Object.keys(sortByOptions).map(sortByOption => {
-      //let sortByOptionValue = sortByOptions[sortByOption];
-      //return <li key={sortByOptionValue}>{sortByOption}</li>;
-      return <li key={sortByOptions.sortByOption}>{sortByOption}</li>;
+      let sortByOptionValue = sortByOptions[sortByOption];
+      return <li className={this.getSortByClass(sortByOptionValue)} key={sortByOptionValue}>{sortByOption}</li>;
     });
   }
 
