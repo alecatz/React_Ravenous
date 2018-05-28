@@ -1,5 +1,4 @@
-const apiKey = '
-2d-QNwVTBJYYT3V5v2-_GtszlqgGUVQxzZJkcNK1HNkbqfZT5t9pFrnjv5J3GOvOHffTlFGw1EfhsQ0Jalqan-e-DIBZEaMF8w1Hkv0NLBX5LeWCY3YnCczA2H8MW3Yx';
+const apiKey = '2d-QNwVTBJYYT3V5v2-_GtszlqgGUVQxzZJkcNK1HNkbqfZT5t9pFrnjv5J3GOvOHffTlFGw1EfhsQ0Jalqan-e-DIBZEaMF8w1Hkv0NLBX5LeWCY3YnCczA2H8MW3Yx';
 
 const Yelp = {
   search(term,location,sortBy) {
@@ -26,7 +25,7 @@ const Yelp = {
         });
       }
     });
-  };
+  }
 };
 
 export default Yelp;
