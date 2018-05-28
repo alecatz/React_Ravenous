@@ -10,6 +10,11 @@ import Yelp from './util/Yelp';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {businesses:[]};
+  }
+
   searchYelp(term,location,sortBy) {
     console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`);
   }
